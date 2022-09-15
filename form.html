@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 class="hidden">Fierce Fitness
+            </h1>
+        </header>
+        <nav id="mainMenu">
+            <ul class="dropdown">
+                <li><a href="home.html">Homepage</a>
+                    <ul>
+                        <li><a href="home.html#about">About Fierce Fitness</a></li>
+                    </ul>
+                </li>
+                <li><a href="classes.html">Group Classes</a>
+                    <ul class="subMenu">
+                        <li><a href="classes.html#zumba">Zumba</a></li>
+                        <li><a href="classes.html#zumbastep">Zumba Step</a></li>
+                        <li><a href="classes.html#yoga">Yoga</a></li>
+                        <li><a href="classes.html#bootcamp">BootCamp</a></li>
+                        <li><a href="classes.html#strong">Strong</a></li>
+                        <li><a href="classes.html#pound">Rock n Tone</a></li>
+                    </ul>
+                </li>
+                <li><a href="schedule.html">Class Schedule</a></li>
+                <li><a href="challeges.html">Challenges</a>
+                    <ul>
+                        <li><a href="challeges.html#abs">Abs</a></li>
+                        <li><a href="challeges.html#thighs">Thighs</a></li>
+                        <li><a href="challeges.html#arms">Arms</a></li>
+                    </ul>
+                </li>
+                <li><a href="workouts.html">Workout Videos</a>
+                    <ul>
+                        <li><a href="workouts.html#core">Core</a></li>
+
+                        <li><a href="workouts.html#upperBody">Upper Body</a></li>
+                        <li><a href="workouts.html#lowerBody">Lower Body</a></li>
+                        <li><a href="workouts.html#fullBody">Full Body</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="form.html">Contact Us</a>
+                    <ul>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="main">
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <div id="location">
+                    <p>3501 Industrial Dr. Suite A Santa Rosa, CA 95403</p>
+                    <p>(707) 365-8486</p>
+                </div>
+                <form action="https://formspree.io/tgutierrez0521@gmail.com" method="POST">
+                    <fieldset id="contact">
+                        <legend>Enter the following information</legend>
+                        <label>Name:</label><br>
+                        <input type="text" name="name"><br>
+                        <label>Last Name:</label><br>
+                        <input type="text" name="lasName"><br>
+                        <label>Phone:</label><br>
+                        <input type="tel" name="phone"><br>
+                        <label>e-mail:</label><br>
+                        <input type="email" name="email"><br>
+                        <label>Gender:</label><br>
+                        <input type="radio" name="gender" value="male"> Male <br>
+                        <input type="radio" name="gender" value="female"> Female <br><br>
+                        <label>Join e-newsletter:</label>
+                        <input type="checkbox" name="newsletter"><br>
+                        <label>Obain information about:</label>
+                        <select name="info">
+                            <option value="changes">Schedule Changes</option>
+                            <option value="workouts">Workouts</option>
+                            <option value="nutrition">Nutrition</option>
+                            </select><br><br>
+                        <label>Leave a Comment:</label><br>
+                        <textarea name="comment" rows="5" cols="35"></textarea><br>
+                        <input type="submit">
+                        <input type="reset">
+
+                    </fieldset>
+
+                </form>
+
+
+            </section>
+
+
+        </div>
+        <footer>
+            <p>3501 Industrial Dr Suite A Santa Rosa CA 95403 | (707) 365-8486</p>
+            <p>Fierce Fitness &copy; 2018</p>
+        </footer>
+    </div>
+</body>
+
+</html>
