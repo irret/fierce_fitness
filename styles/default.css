@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, verdana, sans-serif;
+    background-color: black;
+}
+
+#container {
+    max-width: 1200px;
+    margin: auto;
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav ul {
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+nav ul li {
+    padding: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-bottom: grey dotted 1px;
+    position: relative;
+}
+
+.active {
+    background-color: rgb(159, 10, 10);
+}
+
+nav li:hover {
+    background-color: rgb(159, 10, 10);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    align-items: stretch;
+    margin: auto;
+    width: 100%;
+}
+
+
+#overFlowY {
+    overflow-y: scroll;
+}
+
+
+figure,
+table {
+    margin: auto;
+}
+
+
+.hidden {
+    display: none;
+}
+
+nav {
+    border: solid lightgrey;
+    text-align: center;
+}
+
+section {
+    position: relative;
+    margin: 5px;
+    background: white;
+}
+
+header {
+    background-image: url(../assets/fierce_logo2.jpg);
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+footer {
+    border: solid lightgrey;
+    background-color: rgb(159, 10, 10);
+}
+
+h1,
+h2 {
+    font-family: '2-questa_grande_regular_31', arial, verdana, serif;
+}
+
+
+h1,
+h2,
+h3,
+footer,
+figure {
+    text-align: center;
+}
+
+header h1,
+nav a,
+footer {
+    color: white;
+    text-decoration: none;
+}
+
+img,
+video,
+embed {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border: solid grey;
+    padding: 5px;
+    margin: 0 auto;
+    border-spacing: 3px;
+    empty-cells: show;
+    caption-side: top;
+    border-collapse: collapse;
+}
+
+td {
+    border: dotted 1px grey;
+    padding: 5px;
+}
+
+th {
+    height: 40px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: dotted 1px grey;
+}
+
+tr:nth-child(even) {
+    background-color: #CCCCCC;
+}
+
+tr:hover {
+    background: grey;
+}
+
+
+.classes p {
+    width: 90%;
+    margin: auto;
+}
+
+.classes img {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+fieldset {
+    margin: 10px;
+}
+
+
+textarea {
+    width: 400px;
+    height: 200px;
+}
+
+.formImg img {
+    width: 50%;
+}
+
+.dropdown li {
+    position: relative;
+    border: 1px solid lightgrey;
+}
+
+.dropdown > li > ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    width: 40%;
+    z-index: 1;
+    background-color: black;
+    padding: inherit;
+    margin: auto;
+}
+
+
+.dropdown > li:hover > ul {
+    display: inline;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/* CSS Media Queries for typical devices */
+
+/* 1: Extra small devices (phones, less than 768px) */
+
+/* No media query since this is the default ruleset in a "mobile first" approach */
+
+/* 2: Small devices (tablets, 768px and up) */
+
+@media (min-width:768px) {
+    header {
+        height: 200px;
+    }
+    nav ul {
+        display: table;
+    }
+    nav ul li {
+        display: table-cell;
+        border-bottom: none;
+        border-right: dotted grey 1px;
+    }
+
+    #main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section {
+        width: 48.6%;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    .schedule,
+    .contact {
+        width: 100%;
+    }
+    .classes p {
+        height: 100px;
+    }
+
+    .dropdown > li > ul {
+        width: 100%;
+    }
+
+    .dropdown > li:hover > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 360px;
+    }
+
+}
+
+
+
+
+/* 3: Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    #main {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    header {
+        height: 250px;
+    }
+    #sidebar {
+        width: 20%;
+    }
+
+    #main.classes {
+        flex-wrap: wrap;
+    }
+    .classes section {
+        width: 49.1%;
+        margin: 5px auto;
+    }
+
+    .classes p {
+        height: 70px;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
+
+
+
+/* 4: Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe {
+        height: 500px;
+    }
+}
