@@ -239,6 +239,8 @@ iframe {
     }
     section {
         width: 48.6%;
+        padding: 20px;
+
     }
 
     #sidebar {
